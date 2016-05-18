@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!--HTML5 doctype-->
+<html>
+
+<head>
+
+    <title>Single Button Stack</title>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <link rel="stylesheet" type="text/css" href="lib/appframework/icons.css" />
+    <link rel="stylesheet" type="text/css" href="lib/appframework/af.ui.css" />
+
+    <script type="text/javascript" charset="utf-8" src="lib/jquery.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="lib/fastclick.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="lib/appframework/appframework.ui.min.js"></script>
+        
+    <script src='cordova.js'></script>
+        
+    <script type="text/javascript" charset="utf-8" src="launch.js"></script>
+
+
+</head>
+
+<body>
+
+    <div id="splashscreen" class='ui-loader heavy'>
+        SBS - Launch a machine in a minute.
+        <br>
+        <br>
+        <span class='ui-icon ui-icon-loading spin'></span>
+        <h1>Starting app</h1>
+    </div>
+
+    <div class="view">
+        <header>
+            <h1>SBS Launcher</h1>
+        </header>
+
+        <div class="pages">
+
+            <div class="panel" data-title="Home" id="item1">
+                <h2>SBS Launcher</h2>
+                <h5>Single Button Stack</h5>
+                <p>Launch a small machine in AWS with all your tools, ready for you to connect and work.</p>
+                    
+                <div>
+                    <a href="#" 
+                       onclick="spinup();" 
+                       data-role="button" 
+                       data-theme="a">
+                        Launch
+                    </a>
+                </div>
+            </div>
+
+        </div>    
+    </div>
+
+</body>
+</html>
